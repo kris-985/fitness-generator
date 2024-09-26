@@ -2,9 +2,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-export default function Home() {
+export default function FitnessOne() {
   return (
     <div>
+      Fitness-One
       <br></br>
       <br></br>
       <Link href="/fitness-one">Fitness One</Link>
