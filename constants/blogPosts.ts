@@ -1,4 +1,4 @@
-const blogPosts = [
+export const blogPosts = [
     {
         title: "Clean Green Mango Kale Smoothie",
         timestamp: "3 hrs ago",
