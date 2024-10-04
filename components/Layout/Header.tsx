@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import { Avatar } from "@mui/material";
 
 const Header = () => {
   return (
@@ -14,13 +15,16 @@ const Header = () => {
           Gym Generator
         </Typography>
 
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", width: "100%" }}>
           <Button color="inherit" component={Link} href="/">
             Home
           </Button>
           <Button color="inherit" component={Link} href="/diary">
             Diary
           </Button>
+          <Link style={{ marginLeft: "auto" }} href={"/profile"}>
+            <Avatar sx={{ width: 30, height: 30 }} />
+          </Link>
         </Box>
       </Toolbar>
     </AppBar>
